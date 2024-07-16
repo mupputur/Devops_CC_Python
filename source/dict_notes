@@ -1,0 +1,43 @@
+>>> d = {}
+>>> type(d)
+<class 'dict'>
+>>>
+>>> x = {"A": 65, "B": 66, "C": 67, "D": 68}
+>>>
+>>> x
+{'A': 65, 'B': 66, 'C': 67, 'D': 68}
+>>> x["A"]
+65
+>>> x["B"]
+66
+>>>
+>>> x["N"]
+Traceback (most recent call last):
+  File "<stdin>", line 1, in <module>
+KeyError: 'N'
+>>> # Dict keys  must be unique and it must be immutable object
+>>> # Dict values can be duplicated and it can be python object
+
+
+
+>>>
+>>> d = {"item1": 65.7, "item2": 67.9}
+>>>
+>>> d
+{'item1': 65.7, 'item2': 67.9}
+>>>
+>>> # Adding new item to dict
+>>>
+>>> # SYNTAX : dict[KEY] = value
+>>>
+>>> d["item3"] = 89.7
+>>>
+>>> d
+{'item1': 65.7, 'item2': 67.9, 'item3': 89.7}
+>>> # Updateing existing dict value
+>>> # SYNATX : dict[KEY] = value
+>>>
+>>> d["item1"] = 100.6
+>>> d
+{'item1': 100.6, 'item2': 67.9, 'item3': 89.7}
+
